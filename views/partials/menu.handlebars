@@ -1,0 +1,12 @@
+<nav id="navbar">
+    <h2>Pensamentos</h2>
+    <ul>
+        {{#if session.userid}}
+            <li><a href="/auth/logout"/>logout</a></li>
+        {{else}}
+            <li><a href="/toughts"/>Pensamentos</a></li>
+            <li><a href="/auth/login"/>Entrar</a></li>
+            <li><a href="/auth/regsiter"/>Registrar</a></li>
+        {{/if}}
+    </ul>
+</nav>

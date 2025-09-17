@@ -1,0 +1,17 @@
+<div class="dashboard">
+    <div class="title-container">
+        <h2>Dashboard</h2>
+        <a href="/toughts/add">Criar pensamento</a>
+    </div>
+    <h3>Meus pensamentos</h3>
+    <ul>
+    {{#each toughts}}
+        <li>
+            <span class="label">{{this.title}}</span>
+            <span class="actions">
+                <a href="/toughts/remove/{{this.id}}" class="btn">Excluir</a>
+            </span>
+        </li>
+    {{/each}}
+    </ul>
+</div>
