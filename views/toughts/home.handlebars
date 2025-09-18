@@ -1,1 +1,15 @@
-<h1>Pensamentos</h1>
+<div class="dashboard">
+    <div class="title-container">
+        <h2>Pensamentos</h2>
+        <a href="/toughts/add">Criar pensamento</a>
+    </div>
+    <h3>Meus pensamentos</h3>
+    <ul>
+    {{#each toughts}}
+        <li>
+            <p class="label">{{this.title}}</p>
+            <p>{{this.User.name}}</p>
+        </li>
+    {{/each}}
+    </ul>
+</div>
